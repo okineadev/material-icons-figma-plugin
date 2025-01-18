@@ -1,1 +1,1 @@
-# 🍱 Material Icons Figma plugin
+# 🍱 Material Icons for Figma
