@@ -2,7 +2,7 @@
 	"name": "material-icons-figma",
 	"version": "0.0.0",
 	"author": "Material Extensions",
-	"description": "Material Design Icons for Figma",
+	"description": "Material Icons for Figma",
 	"license": "MIT",
 	"main": "dist/index.js",
 	"type": "module",
