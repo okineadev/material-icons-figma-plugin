@@ -1,0 +1,34 @@
+{
+	"name": "material-icons-figma",
+	"version": "0.0.0",
+	"author": "Material Extensions",
+	"description": "Material Design Icons for Figma",
+	"license": "MIT",
+	"main": "dist/index.js",
+	"type": "module",
+	"scripts": {
+		"watch": "bun run build --watch",
+		"bundle-icons": "bun scripts/bundleIcons.ts",
+		"build": "rimraf dist && bun run bundle-icons && plugma build",
+		"lint": "biome check --fix",
+		"format": "biome format --write",
+		"prepare": "husky"
+	},
+	"dependencies": {
+		"vue": "^3.5.13"
+	},
+	"devDependencies": {
+		"@figma/plugin-typings": "^1.107.0-beta.1",
+		"@vitejs/plugin-vue": "^5.2.1",
+		"bun-types": "^1.1.45",
+		"husky": "^9.1.7",
+		"lint-staged": "^15.4.1",
+		"material-icon-theme": "^5.17.0",
+		"plugma": "^1.2.7",
+		"rimraf": "^6.0.1",
+		"sass-embedded": "^1.83.4",
+		"typescript": "^5.7.3",
+		"vite": "^6.0.7"
+	},
+	"trustedDependencies": ["@biomejs/biome"]
+}

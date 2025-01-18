@@ -1,0 +1,53 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Nunito", sans-serif;
+	color: var(--figma-color-text);
+	display: flex;
+	flex-direction: column;
+	-ms-overflow-style: none;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+#app {
+	min-height: 100%;
+}
+
+a {
+	color: var(--figma-color-text-brand);
+}
+
+.center {
+	text-align: center;
+}
+
+// ==============================
+
+#container {
+	display: flex;
+	min-height: 100%;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+// ==============================
+
+#noResults {
+	color: var(--figma-color-text-secondary);
+	padding: 16px;
+	display: none;
+}
+
+#copyright {
+	font-size: 13px;
+	margin: 3px 0;
+	color: var(--figma-color-text-tertiary);
+
+	a {
+		color: inherit;
+	}
+}

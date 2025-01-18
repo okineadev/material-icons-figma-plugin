@@ -1,0 +1,11 @@
+{
+	"files.readonlyInclude": {
+		"bun.lock": true,
+		"src/ui/icons.json": true
+	},
+	"editor.defaultFormatter": "biomejs.biome",
+	"[vue]": {
+		"editor.defaultFormatter": "Vue.volar"
+	},
+	"typescript.tsdk": "node_modules/typescript/lib"
+}

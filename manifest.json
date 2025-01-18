@@ -1,0 +1,15 @@
+{
+	"name": "Material Icons",
+	"id": "1461657243876074425",
+	"api": "1.0.0",
+	"main": "src/code/index.ts",
+	"ui": "src/ui/ui.html",
+	"capabilities": [],
+	"enableProposedApi": false,
+	"documentAccess": "dynamic-page",
+	"editorType": ["figma"],
+	"networkAccess": {
+		"allowedDomains": ["none"],
+		"devAllowedDomains": ["http://localhost:4000"]
+	}
+}

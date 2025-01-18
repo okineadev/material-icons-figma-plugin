@@ -1,0 +1,17 @@
+name: ✅ Check PR Title
+
+on:
+  pull_request:
+    types: [opened, edited]
+
+permissions:
+  pull-requests: write
+  issues: write # Update issue labels
+
+jobs:
+  lint-pr-title:
+    if: ${{ github.event.action == 'opened' || github.event.changes.title != null }}
+
+    uses: material-extensions/workflows/.github/workflows/pr-title.yml@main
+    with:
+      commitlint-help-url: https://github.com/material-extensions/vscode-material-icon-theme/blob/main/CONTRIBUTING.md#conventional-pull-request-titles
