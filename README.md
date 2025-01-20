@@ -1,5 +1,4 @@
 <!-- markdownlint-disable first-line-h1 heading-start-left -->
-
 <div align="center">
 
   # 🍱 Material Icons for Figma
