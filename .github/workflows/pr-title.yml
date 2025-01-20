@@ -4,10 +4,6 @@ on:
   pull_request:
     types: [opened, edited]
 
-permissions:
-  pull-requests: write
-  issues: write # Update issue labels
-
 jobs:
   lint-pr-title:
     if: ${{ github.event.action == 'opened' || github.event.changes.title != null }}
