@@ -1,4 +1,5 @@
 <!-- markdownlint-disable first-line-h1 heading-start-left -->
+<!-- markdownlint-disable-next-line -->
 <div align="center">
 
   # 🍱 Material Icons for Figma
@@ -24,6 +25,10 @@ Built with modern technologies for the best performance:
 - [**Vue**](https://vuejs.org/)
 - [**Vite**](https://vite.dev/)
 
+This plugin is based on the **npm** library [`material-icon-theme`](https://www.npmjs.com/package/material-icon-theme) which contains fresh icons from [**vscode-material-icon-theme**](https://github.com/material-extensions/vscode-material-icon-theme)
+
 ## 🚀 Getting Started
 
-Just install the plugin from Figma Community and start using it right away! No configuration needed.
+> The plugin is not published yet, but stay tuned, it will be published soon 😉
+
+<!-- Just install the plugin from Figma Community and start using it right away! No configuration needed. -->
