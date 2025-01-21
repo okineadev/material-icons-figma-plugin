@@ -1,0 +1,22 @@
+name: 🎉 PR closed
+
+on:
+  pull_request_target:
+    types:
+      - closed
+
+permissions:
+  pull-requests: write
+
+jobs:
+  thank-you:
+    if: github.event.pull_request.merged == true
+
+    uses: material-extensions/workflows/.github/workflows/pr-closed.yml@main
+    with:
+      comment: |
+        ## Merge Successful
+
+        Thanks for your contribution! 🎉
+
+        The changes will be part of the upcoming update of the Figma plugin.
