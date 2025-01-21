@@ -1,0 +1,6 @@
+blank_issues_enabled: true
+
+contact_links:
+  - name: 🏞️ Icon Request
+    about: Ask for specific icons to be added
+    url: https://github.com/material-extensions/vscode-material-icon-theme/issues/new?template=1-icon-request.yml
