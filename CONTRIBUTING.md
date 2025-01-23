@@ -12,11 +12,29 @@ If you encounter any issues or bugs, please check the existing issues first to s
 
 ## 🚀 Creating Pull Requests
 
-1. **Fork the repository** and create your branch from `main`.
-2. **Make your changes** in the new branch.
-3. **Commit your changes** with a clear and descriptive message.
-4. **Push your branch** to your forked repository.
-5. **Create a pull request** from your branch to this repository.
+To contribute to the project, follow the workflow below:
+
+1. **Fork the repository**: Click on the "Fork" button at the top right corner of the repository page to create a copy of the repository in your GitHub account.
+2. **Clone the repository**: Clone the forked repository to your local machine using the following command:
+   ```sh
+   git clone https://github.com/<your-username>/material-icons-figma-plugin.git
+   cd material-icons-figma-plugin
+   ```
+3. **Create a new branch**: Create a new branch for your contribution using a descriptive name. For example:
+   ```sh
+   git checkout -b feature/add-new-icon
+   ```
+4. **Make your changes**: Implement your changes or additions in the new branch.
+5. **Commit your changes**: Commit your changes with a clear and descriptive commit message following the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification. For example:
+   ```sh
+   git commit -m "feat: add new icon for user profile"
+   ```
+6. **Push your branch**: Push your branch to your forked repository on GitHub:
+   ```sh
+   git push origin feature/add-new-icon
+   ```
+7. **Create a pull request**: Open a pull request from your branch to the main repository. Provide a clear and detailed description of your changes in the pull request.
+
 
 ## 📝 Conventional Pull Request Titles
 
