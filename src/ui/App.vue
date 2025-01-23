@@ -13,7 +13,7 @@ import icons from './icons.json'
 		<div>
 			<Input />
 			<p id="noResults" class="center">No icons found</p>
-			<Icons :icons={ icons } />
+			<Icons :icons=icons />
 		</div>
 		<p id="copyright" class="center">© <a href="https://github.com/material-extensions" target="_blank">Material
 				Extensions</a> (2025-present)</p>

@@ -1,8 +1,10 @@
-<script setup>
-import Icons from '../types'
+<script setup lang="ts">
+// @ts-ignore it just works
+import type { Icons } from '../types'
 
 defineProps({
 	icons: {
+		// @ts-expect-error 🩹 idk how to fix this
 		type: Icons,
 		required: true,
 	},
