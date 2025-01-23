@@ -5,6 +5,7 @@
 body {
 	font-family: "Nunito", sans-serif;
 	color: var(--figma-color-text);
+
 	display: flex;
 	flex-direction: column;
 	-ms-overflow-style: none;
@@ -13,6 +14,7 @@ body {
 		display: none;
 	}
 }
+
 #app {
 	min-height: 100%;
 }
@@ -30,24 +32,27 @@ a {
 #container {
 	display: flex;
 	min-height: 100%;
+
 	flex-direction: column;
 	justify-content: space-between;
+
+	// "No results" message
+	#noResults {
+		color: var(--figma-color-text-secondary);
+		padding: 16px;
+
+		display: none;
+	}
+
+	#copyright {
+		font-size: 13px;
+		margin: 3px 0;
+		color: var(--figma-color-text-tertiary);
+
+		a {
+			color: inherit;
+		}
+	}
 }
 
 // ==============================
-
-#noResults {
-	color: var(--figma-color-text-secondary);
-	padding: 16px;
-	display: none;
-}
-
-#copyright {
-	font-size: 13px;
-	margin: 3px 0;
-	color: var(--figma-color-text-tertiary);
-
-	a {
-		color: inherit;
-	}
-}

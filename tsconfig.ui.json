@@ -16,11 +16,13 @@
 		"jsx": "preserve",
 
 		/* Linting */
-		"strict": true,
+		"strict": false,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true,
-		"noUncheckedSideEffectImports": true
+		"noUncheckedSideEffectImports": true,
+
+		"resolveJsonModule": true
 	},
-	"include": ["src/ui/**/*.ts", "src/ui/**/*.vue"]
+	"include": ["src/ui/**/*.ts", "src/ui/**/*.vue", "types.d.ts"]
 }

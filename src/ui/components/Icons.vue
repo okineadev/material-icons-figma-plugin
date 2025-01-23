@@ -1,18 +1,20 @@
 <script setup>
+import Icons from '../types'
+
 defineProps({
 	icons: {
-		type: Object,
+		type: Icons,
 		required: true,
 	},
 })
 </script>
 
 <template>
-    <div id="iconsContainer">
-        <div v-for="(iconContent, icon) in icons" :key="icon" class="icon" draggable="true" :title="icon"
-            v-html="iconContent">
-        </div>
-    </div>
+	<div id="iconsContainer">
+		<div v-for="(iconContent, icon) in icons" :key="icon" class="icon" draggable="true" :title="icon"
+			v-html="iconContent">
+		</div>
+	</div>
 </template>
 
 <style scoped lang="scss">
