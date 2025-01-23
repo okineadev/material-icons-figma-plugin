@@ -18,9 +18,9 @@ If you encounter any issues or bugs, please check the existing issues first to s
 4. **Push your branch** to your forked repository.
 5. **Create a pull request** from your branch to this repository.
 
-## 📝 Commit Message Conventions
+## 📝 Conventional Pull Request Titles
 
-We follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification. Please ensure your commit messages follow these conventions. You can refer to the `commitlint.config.js` file for more details.
+We follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification for commits and PR titles. Please ensure your PR title follow these conventions
 
 ## 🛠️ Setting Up the Development Environment
 
