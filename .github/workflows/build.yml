@@ -1,0 +1,40 @@
+name: 🛠️ Build
+
+on:
+  push:
+    paths:
+      - 'src/**'
+      - '.bun-version'
+      - 'bunfig.toml'
+      - 'package.json'
+      - '!*.md'
+
+  pull_request:
+    paths:
+      - 'src/**'
+      - '.bun-version'
+      - 'bunfig.toml'
+      - 'package.json'
+      - '!*.md'
+
+jobs:
+  build-and-test:
+    name: Build Plugin
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: 🔧 Setup Bun
+        uses: oven-sh/setup-bun@4bc047ad259df6fc24a6c9b0f9a0cb08cf17fbe5 # v2
+        with:
+          bun-version-file: ".bun-version"
+
+      - name: 📦 Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: 🛠️ Build
+        id: build
+        run: bun run build

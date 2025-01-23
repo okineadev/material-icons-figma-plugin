@@ -1,16 +1,30 @@
 {
-	"name": "material-icons-figma",
-	"version": "0.0.0",
-	"author": "Material Extensions",
+	"name": "material-icons-figma-plugin",
 	"description": "Material Icons for Figma",
+	"version": "0.0.0",
+	"author": {
+		"name": "Okinea Dev",
+		"url": "https://okinea.dev"
+	},
+	"bugs": {
+		"url": "https://github.com/okineadev/material-icons-figma-plugin/issues"
+	},
+	"keywords": ["cli", "nodejs", "terminal", "tui", "project-info"],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/okineadev/material-icons-figma-plugin"
+	},
+	"homepage": "https://github.com/okineadev/material-icons-figma-plugin",
+	"funding": "https://github.com/okineadev/material-icons-figma-plugin?sponsor=1",
 	"license": "MIT",
-	"main": "dist/index.js",
+	"private": true,
 	"type": "module",
 	"scripts": {
 		"watch": "bun run build --watch",
 		"bundle-icons": "bun scripts/bundleIcons.ts",
 		"build": "rimraf dist && bun run bundle-icons && plugma build",
 		"lint": "biome check --fix",
+		"preversion": "bun run format && git add .",
 		"format": "biome format --write",
 		"prepare": "husky"
 	},

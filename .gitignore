@@ -137,3 +137,6 @@ dist
 
 # Pre-bundled SVG icons for the plugin
 src/ui/icons.json
+
+# Build
+*.zip
