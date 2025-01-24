@@ -14,7 +14,7 @@ defineProps({
 <template>
 	<div id="iconsContainer">
 		<div v-for="(iconContent, icon) in icons" :key="icon" class="icon" draggable="true" :title="icon"
-			v-html="iconContent">
+			v-html="iconContent" :aria-label="icon">
 		</div>
 	</div>
 </template>

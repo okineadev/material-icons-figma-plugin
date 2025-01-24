@@ -12,7 +12,7 @@ import icons from './icons.json'
 	<div id="container">
 		<div>
 			<Input />
-			<p id="noResults" class="center">No icons found</p>
+			<p id="noResults" class="center" aria-live="polite">No icons found</p>
 			<Icons :icons=icons />
 		</div>
 		<p id="copyright" class="center">© <a href="https://github.com/material-extensions" target="_blank">Material
