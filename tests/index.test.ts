@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, beforeEach, type Mock } from 'vitest'
 import type { SceneNode } from '@figma/plugin-typings/plugin-api-standalone'
-const initPlugin = require('../src/code/index.ts').default
+import initPlugin from '../src/code/index'
 
 declare global {
 	var figma: {
