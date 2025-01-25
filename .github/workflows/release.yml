@@ -71,3 +71,5 @@ jobs:
 
       - name: ⬆️ Upload plugin to GitHub release
         run: gh release upload v$VERSION $ZIP_FILE
+        env:
+          GH_TOKEN: ${{ github.token }}
