@@ -2,6 +2,7 @@
 	"recommendations": [
 		"vue.volar",
 		"biomejs.biome",
-		"davidanson.vscode-markdownlint"
+		"davidanson.vscode-markdownlint",
+		"vitest.explorer"
 	]
 }

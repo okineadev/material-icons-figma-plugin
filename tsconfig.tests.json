@@ -1,0 +1,7 @@
+{
+	"extends": "./tsconfig.node.json",
+	"compilerOptions": {
+		"lib": ["DOM"]
+	},
+	"include": ["tests/**/*.ts", "vite-env.d.ts", "shims-vue.d.ts"]
+}

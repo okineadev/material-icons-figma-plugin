@@ -1,4 +1,4 @@
-function handleDropEvent(event) {
+function handleDropEvent(event: DropEvent) {
 	const { files } = event
 
 	// Check if at least one file is dropped and if it's an SVG image
@@ -50,5 +50,6 @@ export default function () {
 	})
 
 	// Listen for 'drop' events from the UI
+	// @ts-ignore
 	figma.on('drop', handleDropEvent)
 }

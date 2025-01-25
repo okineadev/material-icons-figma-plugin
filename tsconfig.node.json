@@ -19,7 +19,9 @@
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true,
 		"noUncheckedSideEffectImports": true,
+		"noImplicitAny": false,
+
 		"types": ["bun-types"]
 	},
-	"include": ["vite*.config.ts", "scripts/**/*.ts"]
+	"include": ["vite*.config.js", "scripts/**/*.ts"]
 }

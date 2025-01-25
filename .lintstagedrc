@@ -1,3 +1,4 @@
 {
-	"*": ["bun run format --no-errors-on-unmatched"]
+	"*": ["bun run format --no-errors-on-unmatched"],
+	"src/**/*": ["bunx vitest related --run"]
 }
