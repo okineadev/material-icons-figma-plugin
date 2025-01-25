@@ -3,15 +3,6 @@ import { describe, it, expect } from 'vitest'
 import App from '../src/ui/App.vue'
 
 describe('App.vue', () => {
-	// beforeEach(() => {
-	// 	// Mock the DOM Content Loaded event
-	// 	Object.defineProperty(document, 'addEventListener', {
-	// 		value: vi.fn((event, callback) => {
-	// 			if (event === 'DOMContentLoaded') callback()
-	// 		}),
-	// 	})
-	// })
-
 	it('renders all components correctly', () => {
 		const wrapper = mount(App)
 		expect(wrapper.find('#container').exists()).toBe(true)
@@ -39,7 +30,4 @@ describe('App.vue', () => {
 		const wrapper = mount(App)
 		expect(wrapper.find('#searchInput').exists()).toBe(true)
 	})
-
-	// Note: Additional drag-and-drop tests would require more complex setup
-	// due to the nature of browser drag events
 })
