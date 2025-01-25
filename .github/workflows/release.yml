@@ -57,7 +57,7 @@ jobs:
           echo "ZIP_FILE=$ZIP_FILE"    >> $GITHUB_ENV
 
       - name: 📦 Pack plugin
-        run: zip -r $ZIP_FILE dist
+        run: zip -9TXjr $ZIP_FILE dist
 
       - name: 🔒 Attest artifacts
         uses: actions/attest-build-provenance@520d128f165991a6c774bcb264f323e3d70747f4 # v2.2.0
