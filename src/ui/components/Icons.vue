@@ -1,11 +1,10 @@
 <script setup lang="ts">
-// @ts-ignore it just works
-import type { Icons } from '../types'
+import type { Icons } from '../types.d'
+import type { PropType } from 'vue'
 
 defineProps({
 	icons: {
-		// @ts-expect-error 🩹 idk how to fix this
-		type: Icons,
+		type: Object as PropType<Icons>,
 		required: true,
 	},
 })
@@ -14,7 +13,7 @@ defineProps({
 <template>
 	<div id="iconsContainer">
 		<div v-for="(iconContent, icon) in icons" :key="icon" class="icon" draggable="true" :title="icon"
-			v-html="iconContent">
+			v-html="iconContent" :aria-label="icon">
 		</div>
 	</div>
 </template>

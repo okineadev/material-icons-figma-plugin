@@ -1,6 +1,6 @@
 <template>
 	<div id="searchContainer">
-		<input type="search" id="searchInput" placeholder="Search icons">
+		<input type="search" id="searchInput" placeholder="Search icons" aria-label="Search icons">
 	</div>
 </template>
 
