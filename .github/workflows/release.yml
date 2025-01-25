@@ -35,6 +35,9 @@ jobs:
       - name: 🚀 Prepare release
         run: bun run preversion
 
+      - name: 🛠️ Build plugin
+        run: bun run build
+
       - name: 📜 Generate changelog and release notes
         env:
           # Don't run husky on `git commit`
@@ -42,9 +45,6 @@ jobs:
         run: |
           bunx changelogen --release --push
           bunx changelogen github release --token ${{ secrets.GITHUB_TOKEN }}
-
-      - name: 🛠️ Build plugin
-        run: bun run build
 
       - name: 📝 Get metadata
         run: |
@@ -65,5 +65,5 @@ jobs:
         with:
           subject-path: ${{ env.ZIP_FILE }}
 
-      - name: ⬆️ Upload VSIX to GitHub release
+      - name: ⬆️ Upload plugin to GitHub release
         run: gh release upload v$VERSION $ZIP_FILE

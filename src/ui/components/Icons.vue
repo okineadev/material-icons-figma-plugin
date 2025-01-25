@@ -1,11 +1,10 @@
 <script setup lang="ts">
-// @ts-ignore it just works
-import { Icons } from '../types'
+import type { Icons } from '../types.d'
+import type { PropType } from 'vue'
 
 defineProps({
 	icons: {
-		// @ts-expect-error 🩹 idk how to fix this
-		type: Icons,
+		type: Object as PropType<Icons>,
 		required: true,
 	},
 })

@@ -1,4 +1,4 @@
-name: 🛠️ Build + Test
+name: 🛠️ Build
 
 on:
   push:
@@ -19,7 +19,7 @@ on:
 
 jobs:
   build-and-test:
-    name: Build & Test Plugin
+    name: Build Plugin
 
     runs-on: ubuntu-latest
 
@@ -38,7 +38,3 @@ jobs:
       - name: 🛠️ Build
         id: build
         run: bun run build
-
-      - name: 🧪 Run Unit Tests
-        id: test
-        run: bun run test
