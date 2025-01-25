@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // @ts-ignore it just works
-import type { Icons } from '../types'
+import { Icons } from '../types'
 
 defineProps({
 	icons: {
