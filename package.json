@@ -1,7 +1,7 @@
 {
 	"name": "material-icons-figma-plugin",
 	"description": "Material Icons for Figma",
-	"version": "0.0.1",
+	"version": "0.0.0",
 	"author": {
 		"name": "Okinea Dev",
 		"url": "https://okinea.dev"
@@ -9,13 +9,7 @@
 	"bugs": {
 		"url": "https://github.com/okineadev/material-icons-figma-plugin/issues"
 	},
-	"keywords": [
-		"cli",
-		"nodejs",
-		"terminal",
-		"tui",
-		"project-info"
-	],
+	"keywords": ["cli", "nodejs", "terminal", "tui", "project-info"],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/okineadev/material-icons-figma-plugin"
@@ -51,7 +45,5 @@
 		"typescript": "^5.7.3",
 		"vite": "^6.0.11"
 	},
-	"trustedDependencies": [
-		"@biomejs/biome"
-	]
+	"trustedDependencies": ["@biomejs/biome"]
 }
