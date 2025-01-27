@@ -9,13 +9,7 @@
 	"bugs": {
 		"url": "https://github.com/okineadev/material-icons-figma-plugin/issues"
 	},
-	"keywords": [
-		"cli",
-		"nodejs",
-		"terminal",
-		"tui",
-		"project-info"
-	],
+	"keywords": ["cli", "nodejs", "terminal", "tui", "project-info"],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/okineadev/material-icons-figma-plugin"
@@ -55,7 +49,5 @@
 		"vite": "^6.0.11",
 		"vitest": "^3.0.4"
 	},
-	"trustedDependencies": [
-		"@biomejs/biome"
-	]
+	"trustedDependencies": ["@biomejs/biome"]
 }
