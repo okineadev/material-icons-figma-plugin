@@ -15,8 +15,8 @@ import icons from './icons.json'
 			<p id="noResults" class="center" aria-live="polite">No icons found</p>
 			<Icons :icons=icons />
 		</div>
-		<p id="copyright" class="center">© <a href="https://github.com/material-extensions" target="_blank">Material
-				Extensions</a> (2025-present)</p>
+		<p id="copyright" class="center">© <a href="https://github.com/okineadev" target="_blank">Yurii Bogdan</a>
+			(2025-present)</p>
 	</div>
 </template>
 
