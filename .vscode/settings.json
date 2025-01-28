@@ -10,5 +10,10 @@
 	"[json]": {
 		"editor.defaultFormatter": "biomejs.biome"
 	},
-	"typescript.tsdk": "node_modules/typescript/lib"
+	"typescript.tsdk": "node_modules/typescript/lib",
+
+	"github.copilot.chat.codeGeneration.instructions": [
+		{ "file": "src/arctitecture.md" },
+		{ "file": "CONTRIBUTING.md" }
+	]
 }
