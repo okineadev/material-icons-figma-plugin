@@ -33,3 +33,7 @@ This plugin is based on the **npm** library [`material-icon-theme`](https://www.
 2. Drag and drop the desired icon from the menu into your design
 
 <!-- TODO: Add demonstration gif -->
+
+## ❤️ Support
+
+If you like this plugin, consider supporting it by starring ⭐ it on GitHub, sharing it with your friends, or [buying me a coffee ☕](https://github.com/okineadev/material-icons-figma-plugin?sponsor=1)
