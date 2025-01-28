@@ -29,6 +29,7 @@ This plugin is based on the **npm** library [`material-icon-theme`](https://www.
 
 ## 🚀 Getting Started
 
-> The plugin is not published yet, but stay tuned, it will be published soon 😉
+1. Install the plugin from https://www.figma.com/community/plugin/1461657243876074425/material-icons
+2. Drag and drop the desired icon from the menu into your design
 
-<!-- Just install the plugin from Figma Community and start using it right away! No configuration needed. -->
+<!-- TODO: Add demonstration gif -->
