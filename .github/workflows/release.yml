@@ -47,6 +47,10 @@ jobs:
           # Don't run husky on `git commit`
           HUSKY: 0
         run: |
+          # Changelog for Figma
+          CHANGELOG="$(bunx changelogen | tail -n +7)"
+          echo "CHANGELOG=$CHANGELOG"  >> $GITHUB_ENV
+
           bunx changelogen --release --push
           bunx changelogen github release --token ${{ secrets.GITHUB_TOKEN }}
 
@@ -73,3 +77,8 @@ jobs:
         run: gh release upload v$VERSION $ZIP_FILE
         env:
           GH_TOKEN: ${{ github.token }}
+
+      - name: 🚀 Publish plugin
+        run: figcd release -m ./dist/manifest.json --release-notes "$CHANGELOG"
+        env:
+          FIGMA_WEB_AUTHN_TOKEN: ${{ secrets.FIGMA_WEB_AUTHN_TOKEN }}
