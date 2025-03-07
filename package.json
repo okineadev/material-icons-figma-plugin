@@ -30,7 +30,7 @@
 		"test": "bun run build && vitest"
 	},
 	"dependencies": {
-		"material-icon-theme": "5.18.0",
+		"material-icon-theme": "5.20.0",
 		"vue": "^3.5.13"
 	},
 	"devDependencies": {
