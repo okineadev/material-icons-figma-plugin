@@ -95,7 +95,7 @@ jobs:
           HUSKY: 0
         run: |
           # Changelog for Figma
-          $(bunx changelogen | tail -n +7) > /tmp/figma-changelog.md
+          bunx changelogen | tail -n +7 > /tmp/figma-changelog.md
 
           bunx changelogen --release --push
           bunx changelogen github release --token ${{ secrets.GITHUB_TOKEN }}
