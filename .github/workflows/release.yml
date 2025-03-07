@@ -14,6 +14,7 @@ jobs:
       actions: read
 
     outputs:
+      have_updates: ${{ steps.check.outputs.have_updates }}
       status: ${{ steps.check.outputs.status }}
 
     steps:
@@ -32,11 +33,17 @@ jobs:
           current_version=$(jq -r '.dependencies."material-icon-theme"' package.json)
 
           status="skip"
+          have_updates=false
 
-          if [ "$release_version" != "$current_version" ] || [ "$GITHUB_EVENT_NAME" != "schedule" ]; then
+          if [ "$release_version" != "$current_version" ]; then
+            have_updates=true
+          fi
+
+          if $have_updates || [ "$GITHUB_EVENT_NAME" != "schedule" ]; then
             status="release"
           fi
 
+          echo "have_updates=$have_updates" >> $GITHUB_OUTPUT
           echo "status=$status" >> $GITHUB_OUTPUT
 
   release:
@@ -72,6 +79,7 @@ jobs:
         run: bun install --frozen-lockfile
 
       - name: ⏫ Update material-icon-theme package
+        if: needs.check-updates.outputs.have_updates
         run: bun update material-icon-theme --latest
 
       - name: 🛠️ Build plugin
@@ -81,6 +89,7 @@ jobs:
         run: bun run test
 
       - name: 💾 Commit package update
+        if: needs.check-updates.outputs.have_updates
         run: |
           git add package.json bun.lock
           version=$(jq -r '.dependencies."material-icon-theme"' package.json)
