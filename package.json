@@ -35,20 +35,20 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
-		"@figma/plugin-typings": "^1.107.0-beta.1",
+		"@figma/plugin-typings": "^1.108.0",
 		"@vitejs/plugin-vue": "^5.2.1",
 		"@vue/test-utils": "^2.4.6",
-		"bun-types": "^1.2.0",
-		"changelogen": "^0.6.0",
+		"bun-types": "1.2.4",
+		"changelogen": "^0.6.1",
 		"figcd": "^0.0.16",
 		"husky": "^9.1.7",
-		"lint-staged": "^15.4.2",
-		"plugma": "^1.2.7",
+		"lint-staged": "^15.4.3",
+		"plugma": "^1.2.8",
 		"rimraf": "^6.0.1",
-		"sass-embedded": "^1.83.4",
-		"typescript": "^5.7.3",
-		"vite": "^6.0.11",
-		"vitest": "^3.0.4"
+		"sass-embedded": "^1.85.1",
+		"typescript": "^5.8.2",
+		"vite": "^6.2.1",
+		"vitest": "^3.0.8"
 	},
 	"trustedDependencies": ["@biomejs/biome"]
 }
