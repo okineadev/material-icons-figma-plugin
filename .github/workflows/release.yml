@@ -79,7 +79,7 @@ jobs:
         run: bun install --frozen-lockfile
 
       - name: ⏫ Update material-icon-theme package
-        if: needs.check-updates.outputs.have_updates
+        if: needs.check-updates.outputs.have_updates == 'true'
         run: bun update material-icon-theme --latest
 
       - name: 🛠️ Build plugin
@@ -89,7 +89,7 @@ jobs:
         run: bun run test
 
       - name: 💾 Commit package update
-        if: needs.check-updates.outputs.have_updates
+        if: needs.check-updates.outputs.have_updates == 'true'
         run: |
           git add package.json bun.lock
           version=$(jq -r '.dependencies."material-icon-theme"' package.json)
@@ -139,6 +139,8 @@ jobs:
           GH_TOKEN: ${{ github.token }}
 
       - name: 🚀 Publish Figma plugin
-        run: bunx figcd release -m ./dist/manifest.json --release-notes-file /tmp/figma-changelog.md
+        run: |
+          bunx figcd prepare
+          bunx figcd release -m ./dist/manifest.json --release-notes-file /tmp/figma-changelog.md
         env:
           FIGMA_WEB_AUTHN_TOKEN: ${{ secrets.FIGMA_WEB_AUTHN_TOKEN }}
