@@ -27,8 +27,7 @@
 		"preversion": "bun run format && git add .",
 		"format": "biome format --write",
 		"prepare": "husky",
-		"test": "vitest",
-		"package": ""
+		"test": "bun run build && vitest"
 	},
 	"dependencies": {
 		"vue": "^3.5.13"
