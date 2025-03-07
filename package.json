@@ -30,6 +30,7 @@
 		"test": "bun run build && vitest"
 	},
 	"dependencies": {
+		"material-icon-theme": "5.18.0",
 		"vue": "^3.5.13"
 	},
 	"devDependencies": {
@@ -42,7 +43,6 @@
 		"figcd": "^0.0.16",
 		"husky": "^9.1.7",
 		"lint-staged": "^15.4.2",
-		"material-icon-theme": "^5.18.0",
 		"plugma": "^1.2.7",
 		"rimraf": "^6.0.1",
 		"sass-embedded": "^1.83.4",
