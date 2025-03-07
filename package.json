@@ -42,6 +42,7 @@
 		"changelogen": "^0.6.1",
 		"figcd": "^0.0.16",
 		"husky": "^9.1.7",
+		"jsdom": "^26.0.0",
 		"lint-staged": "^15.4.3",
 		"plugma": "^1.2.8",
 		"rimraf": "^6.0.1",
