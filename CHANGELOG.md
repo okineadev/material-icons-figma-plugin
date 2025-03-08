@@ -1,6 +1,46 @@
 # Changelog
 
 
+## v0.0.2
+
+[compare changes](https://github.com/okineadev/material-icons-figma-plugin/compare/v0.0.1...v0.0.2)
+
+### 🚀 Enhancements
+
+- **ci:** Setup automatic publishing to Figma ([148bea5](https://github.com/okineadev/material-icons-figma-plugin/commit/148bea5))
+
+### 🩹 Fixes
+
+- Build before testing ([209fddc](https://github.com/okineadev/material-icons-figma-plugin/commit/209fddc))
+- **ci:** Fix Figma changelog generation ([0ff981c](https://github.com/okineadev/material-icons-figma-plugin/commit/0ff981c))
+- 🚑 install `jsdom` package ([0aae9c1](https://github.com/okineadev/material-icons-figma-plugin/commit/0aae9c1))
+- **ci:** Fix Figma changelog generation ([6f195aa](https://github.com/okineadev/material-icons-figma-plugin/commit/6f195aa))
+- **ci:** Commit `material-icon-theme` package update only if it have update ([6241ab0](https://github.com/okineadev/material-icons-figma-plugin/commit/6241ab0))
+- **ci:** Fix permissions in the `release` job ([1a83bd1](https://github.com/okineadev/material-icons-figma-plugin/commit/1a83bd1))
+- **ci:** Fix "Publish Figma plugin" step in the `release` workflow ([0bfd8b1](https://github.com/okineadev/material-icons-figma-plugin/commit/0bfd8b1))
+- Patch bug in the `figcd` package ([15786f8](https://github.com/okineadev/material-icons-figma-plugin/commit/15786f8))
+
+### 📖 Documentation
+
+- 📚 add project architecture documentation ([b5d1fe5](https://github.com/okineadev/material-icons-figma-plugin/commit/b5d1fe5))
+- Update getting started guide ([af531bb](https://github.com/okineadev/material-icons-figma-plugin/commit/af531bb))
+- Add support section ([56ccfc4](https://github.com/okineadev/material-icons-figma-plugin/commit/56ccfc4))
+
+### 🏡 Chore
+
+- ✏️ update copyright information and contact email ([7a8b28d](https://github.com/okineadev/material-icons-figma-plugin/commit/7a8b28d))
+- Format package.json ([4c22d60](https://github.com/okineadev/material-icons-figma-plugin/commit/4c22d60))
+- ✏️ create pull request template ([b740c80](https://github.com/okineadev/material-icons-figma-plugin/commit/b740c80))
+- 📝 add feature request template ([25cd0d8](https://github.com/okineadev/material-icons-figma-plugin/commit/25cd0d8))
+
+### 🤖 CI
+
+- Automate the release process ([a3d689d](https://github.com/okineadev/material-icons-figma-plugin/commit/a3d689d))
+
+### ❤️ Contributors
+
+- Okinea Dev ([@okineadev](https://github.com/okineadev))
+
 ## v0.0.1
 
 
