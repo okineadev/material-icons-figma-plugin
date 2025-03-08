@@ -27,7 +27,7 @@
 		"preversion": "bun run format && git add .",
 		"format": "biome format --write",
 		"prepare": "husky",
-		"test": "bun run build && vitest"
+		"test": "vitest"
 	},
 	"dependencies": {
 		"material-icon-theme": "5.20.0",

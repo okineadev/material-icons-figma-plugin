@@ -140,7 +140,9 @@ jobs:
 
       - name: 🚀 Publish Figma plugin
         run: |
-          bunx figcd prepare
+          # DEBUG
+          cat /tmp/figma-changelog.md
+          cat ./dist/manifest.json
           bunx figcd release -m ./dist/manifest.json --release-notes-file /tmp/figma-changelog.md
         env:
           FIGMA_WEB_AUTHN_TOKEN: ${{ secrets.FIGMA_WEB_AUTHN_TOKEN }}
