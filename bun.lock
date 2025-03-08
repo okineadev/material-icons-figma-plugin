@@ -14,7 +14,7 @@
         "@vue/test-utils": "^2.4.6",
         "bun-types": "1.2.4",
         "changelogen": "^0.6.1",
-        "figcd": "^0.0.16",
+        "figcd": "0.0.16",
         "husky": "^9.1.7",
         "jsdom": "^26.0.0",
         "lint-staged": "^15.4.3",
@@ -30,6 +30,9 @@
   "trustedDependencies": [
     "@biomejs/biome",
   ],
+  "patchedDependencies": {
+    "figcd@0.0.16": "patches/figcd@0.0.16.patch",
+  },
   "packages": {
     "@asamuzakjp/css-color": ["@asamuzakjp/css-color@2.8.3", "", { "dependencies": { "@csstools/css-calc": "^2.1.1", "@csstools/css-color-parser": "^3.0.7", "@csstools/css-parser-algorithms": "^3.0.4", "@csstools/css-tokenizer": "^3.0.3", "lru-cache": "^10.4.3" } }, "sha512-GIc76d9UI1hCvOATjZPyHFmE5qhRccp3/zGfMPapK3jBi+yocEzp6BBB0UnfRYP9NP4FANqUZYb0hnfs3TM3hw=="],
 

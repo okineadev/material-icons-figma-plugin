@@ -1,0 +1,16 @@
+diff --git a/src/figma-helper.js b/src/figma-helper.js
+index de8e2eeff57d23bba66a29be47cf9fa93d1c2ae4..74ef8a046621f8fbccbb07ac20cae9eecf726d3e 100644
+--- a/src/figma-helper.js
++++ b/src/figma-helper.js
+@@ -216,8 +216,9 @@ module.exports = {
+     uploadCodeBundle: async function(manifestFile, codeUploadInfo) {
+         const manifest = await readJSONFile(manifestFile);
+ 
+-        const main = fs.readFileSync(path.resolve(manifest.main), 'utf8');
+-        const ui = fs.readFileSync(path.resolve(manifest.ui), 'utf8');
++        // Resolve path relative to `manifest.json` rather than the current directory
++        const main = fs.readFileSync(path.resolve(path.join(path.dirname(manifestFile), manifest.main)), 'utf8');
++        const ui = fs.readFileSync(path.resolve(path.join(path.dirname(manifestFile), manifest.ui)), 'utf8');
+     
+         const codeBundle = createPluginBundle(main, ui);
+     

@@ -139,10 +139,6 @@ jobs:
           GH_TOKEN: ${{ github.token }}
 
       - name: 🚀 Publish Figma plugin
-        run: |
-          # DEBUG
-          cat /tmp/figma-changelog.md
-          cat ./dist/manifest.json
-          bunx figcd release -m ./dist/manifest.json --release-notes-file /tmp/figma-changelog.md
+        run: bunx figcd release -m ./dist/manifest.json --release-notes-file /tmp/figma-changelog.md
         env:
           FIGMA_WEB_AUTHN_TOKEN: ${{ secrets.FIGMA_WEB_AUTHN_TOKEN }}
