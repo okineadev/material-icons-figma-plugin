@@ -71,7 +71,7 @@ jobs:
           git config --global push.followTags true
 
       - name: 🔧 Setup Bun
-        uses: oven-sh/setup-bun@4bc047ad259df6fc24a6c9b0f9a0cb08cf17fbe5 # v2
+        uses: oven-sh/setup-bun@735343b667d3e6f658f44d0eca948eb6282f2b76 # v2
         with:
           bun-version-file: ".bun-version"
 
@@ -128,7 +128,7 @@ jobs:
         # -r    : Recursively add files from the specified directory (dist)
 
       - name: 🔒 Attest artifacts
-        uses: actions/attest-build-provenance@c074443f1aee8d4aeeae555aebba3282517141b2 # v2.2.3
+        uses: actions/attest-build-provenance@db473fddc028af60658334401dc6fa3ffd8669fd # v2.3.0
         # Read: https://docs.github.com/en/actions/security-guides/using-artifact-attestations-to-establish-provenance-for-builds
         with:
           subject-path: ${{ env.ZIP_FILE }}
