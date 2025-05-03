@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v0.0.6
+
+[compare changes](https://github.com/okineadev/material-icons-figma-plugin/compare/v0.0.5...v0.0.6)
+
+### 🩹 Fixes
+
+- Fix Dependabot configuration ([0df873b](https://github.com/okineadev/material-icons-figma-plugin/commit/0df873b))
+
+### 🏡 Chore
+
+- Migrate from Renovate to Dependabot ([e00751e](https://github.com/okineadev/material-icons-figma-plugin/commit/e00751e))
+- Remove renovate.json ([73451af](https://github.com/okineadev/material-icons-figma-plugin/commit/73451af))
+- **deps-dev:** Bump the dev-dependencies group with 6 updates ([#27](https://github.com/okineadev/material-icons-figma-plugin/pull/27))
+
+### ❤️ Contributors
+
+- Okinea Dev ([@okineadev](https://github.com/okineadev))
+
 ## v0.0.5
 
 [compare changes](https://github.com/okineadev/material-icons-figma-plugin/compare/v0.0.4...v0.0.5)
