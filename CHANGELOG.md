@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.8
+
+[compare changes](https://github.com/okineadev/material-icons-figma-plugin/compare/v0.0.7...v0.0.8)
+
+### 🏡 Chore
+
+- Remove `dependabot.yml` ([b37c00d](https://github.com/okineadev/material-icons-figma-plugin/commit/b37c00d))
+
+### ❤️ Contributors
+
+- Okinea Dev ([@okineadev](https://github.com/okineadev))
+
 ## v0.0.7
 
 [compare changes](https://github.com/okineadev/material-icons-figma-plugin/compare/v0.0.6...v0.0.7)
