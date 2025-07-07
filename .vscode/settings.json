@@ -11,7 +11,12 @@
 	"typescript.tsdk": "node_modules/typescript/lib",
 
 	"github.copilot.chat.codeGeneration.instructions": [
-		{ "file": "src/arctitecture.md" },
-		{ "file": "CONTRIBUTING.md" }
-	]
+		{ "file": "src/arctitecture.md" }
+	],
+
+	"material-icon-theme.files.associations": {
+		"tsconfig.code.json": "tsconfig",
+		"tsconfig.tests.json": "tsconfig",
+		"tsconfig.ui.json": "tsconfig"
+	}
 }
