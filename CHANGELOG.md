@@ -1,6 +1,25 @@
 # Changelog
 
 
+## v0.0.8
+
+[compare changes](https://github.com/okineadev/material-icons-figma-plugin/compare/v0.0.7...v0.0.8)
+
+### 🏡 Chore
+
+- Remove `dependabot.yml` ([b37c00d](https://github.com/okineadev/material-icons-figma-plugin/commit/b37c00d))
+- Improve commitlint rules and config to yml format ([546415c](https://github.com/okineadev/material-icons-figma-plugin/commit/546415c))
+- **vscode-settings:** Use `tsconfig` file icon for `tsconfig*.json` files ([4d91b65](https://github.com/okineadev/material-icons-figma-plugin/commit/4d91b65))
+- Pin `material-icon-theme` package version exactly to `5.23.0` in the bun lockfile ([1bbeb3e](https://github.com/okineadev/material-icons-figma-plugin/commit/1bbeb3e))
+
+### 🤖 CI
+
+- Remove `close-stale-issues.yml` workflow ([98a5e63](https://github.com/okineadev/material-icons-figma-plugin/commit/98a5e63))
+
+### ❤️ Contributors
+
+- Okinea Dev ([@okineadev](https://github.com/okineadev))
+
 ## v0.0.7
 
 [compare changes](https://github.com/okineadev/material-icons-figma-plugin/compare/v0.0.6...v0.0.7)
