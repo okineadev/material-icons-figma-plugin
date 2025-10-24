@@ -29,7 +29,7 @@
 		"test": "vitest"
 	},
 	"dependencies": {
-		"material-icon-theme": "5.27.0",
+		"material-icon-theme": "5.28.0",
 		"vue": "^3.5.13"
 	},
 	"devDependencies": {
@@ -50,9 +50,7 @@
 		"vite": "^6.3.2",
 		"vitest": "^3.1.1"
 	},
-	"trustedDependencies": [
-		"@biomejs/biome"
-	],
+	"trustedDependencies": ["@biomejs/biome"],
 	"patchedDependencies": {
 		"figcd@0.0.16": "patches/figcd@0.0.16.patch"
 	}
